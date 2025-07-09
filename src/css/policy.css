@@ -1,0 +1,67 @@
+@import url('./reset.css');
+@import url('./base.css');
+@import url('./container.css');
+@import url('./footer.css');
+@import url('./header.css');
+
+.background-policy {
+    color: #2d3142;
+    text-align: left;
+}
+
+.policy-title {
+    margin-top: 70px;
+    margin-bottom: 28px;
+    text-shadow: none;
+    text-align: center;
+}
+
+.text-span {
+    font-weight: 700;
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.policy-subtitle {
+    font-weight: 700;
+    margin-top: 16px;
+}
+
+.policy-list {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.underline {
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+}
+
+.text {
+    margin-top: 16px;
+}
+
+.mail-link {
+    font-weight: 700;
+}
+
+@media only screen and (min-width: 1439px) {
+    .policy-container {
+        padding-left: 180px;
+        padding-right: 180px;
+    }
+
+    .privacy-title {
+        margin-bottom: 36px;
+    }
+
+
+    .header-container {
+        padding-left: 180px;
+        padding-right: 180px;
+    }
+}
