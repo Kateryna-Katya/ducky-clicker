@@ -1,0 +1,194 @@
+/* Hero */
+.hero-section{
+    background-image: url("/img/hero/mob.png");
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    height: 800px;
+}
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    white-space: nowrap;
+    border: 0;
+}
+.hero-link{
+    display: block;
+    width: 243px;
+    height: 70px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 270px;
+}
+@media only screen and (min-width: 1439px) {
+  .hero-section{
+    background-image: url("/img/hero/desk.png");
+    height: 820px;
+  }
+  .hero-link{
+    margin-top: 450px;
+  }
+}
+/* About the Game */
+.about-container{
+    padding-top: 80px;
+}
+.about-img{
+    margin-top: 28px;
+}
+.about-subtitle{
+    margin-top: 22px;
+    font-family: "Quicksand", sans-serif;
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 1.5;
+        text-align: center;
+        color: #000;
+        margin-bottom: 18px;
+}
+@media only screen and (min-width: 1439px) {
+.about-container{
+    padding-top: 150px;
+    padding-bottom: 340px;
+}
+  .about-img{
+margin-top: 36px;
+margin-right: 0;
+margin-left: auto;
+  }
+  .about-subtitle{
+text-align: left;
+margin-top: -350px;
+  }
+  .about-text{
+    text-align: left;
+    width: 542px;
+  }
+}
+/* User Reviews */
+.reviews-title{
+    margin-bottom: 25px;
+}
+.reviews-full-img{
+    display: none;
+}
+.reviews-swiper-slide{
+    cursor: pointer;
+    min-height: 211px;
+    padding-top: 45px;    
+}
+.reviews-wrapper{
+    position: relative;
+    padding: 26px;
+    border: 2px solid #f52865;
+        border-radius: 18px;
+        width: 305px;
+        height: 166px;
+}
+.reviews-slide-img{
+    position: absolute;
+    top: -40px;
+    left: 20px;
+}
+.reviews-slide-title{
+    font-family: "Quicksand", sans-serif;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.5;
+        color: #2d3142;
+        text-align: center;
+        margin-left: 50px;
+}
+.reviews-slide-text{
+    margin-top: 20px;
+    font-family: "Nunito", sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.5;
+        color: #2d3142;
+        text-align: left;
+        height: 65px;
+}
+@media only screen and (min-width: 1439px) {
+ .reviews-full-img{
+    display: block;
+ }
+ .reviews-title{
+    margin-bottom: 36px;
+ }
+ .reviews-swiper-wrapper{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 19px;
+    align-items: end;
+ }
+ .reviews-swiper-slide{
+    max-width: 305px;
+ }
+}
+/* Duck Characters */
+.characters-title{
+    margin-bottom: 28px;
+}
+.characters-swiper-slide{
+    cursor: pointer;
+}
+@media only screen and (min-width: 1439px) {
+.characters-title{
+    margin-bottom: 36px;
+}
+.characters-swiper-wrapper{
+    display: flex;
+    gap: 20px;
+}
+.characters-swiper-slide{
+    max-width: 305px;
+        height: 386px;
+}
+}
+/* Features */
+.features-section{
+    background-image: url("/img/features/mob.png"), url("../img/features/mob-one.png");
+    background-repeat: no-repeat, no-repeat;
+    background-position: top 100px center, top 104px center;
+    background-size: 100% 454px, contain;
+    height:600px;
+}
+.features-title{
+    margin-bottom: 178px;
+}
+.features-list{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 274px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.features-item{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+.features-text-item{
+    color: #2d3142;
+    text-align: left;
+}
+@media only screen and (min-width: 1439px) {
+  .features-section{
+    background-image: url("/img/features/desk.png");
+    background-repeat: no-repeat;
+    background-position: top 70px center;
+    background-size: 100% 600px;
+    height: 670px;
+  }
+.features-title {
+margin-bottom: 220px;
+}
+}
