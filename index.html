@@ -20,20 +20,61 @@
     <script type="module" crossorigin src="/ducky-clicker/index.js"></script>
     <link rel="modulepreload" crossorigin href="/ducky-clicker/assets/vendor-wKantkHV.js">
     <link rel="stylesheet" crossorigin href="/ducky-clicker/assets/vendor-BMD19QWe.css">
-    <link rel="stylesheet" crossorigin href="/ducky-clicker/assets/styles-Csy7m_0v.css">
+    <link rel="stylesheet" crossorigin href="/ducky-clicker/assets/styles-CGrvMCUt.css">
   </head>
   <body>
-    <header class="header">
-  <div class="container">
-   
+    <header class="header" id="site-header">
+  <div class="header-container container">
+    <button type="button" class="menu-button" aria-label="menu toggle">
+      <span class="icon">
+        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M6 36V33H42V36H6ZM6 25.5V22.5H42V25.5H6ZM6 15V12H42V15H6Z" fill="#2D3142" />
+        </svg>
+      </span>
+    </button>
+    <nav class="nav ">
+      <ul class="navigation-list">
+        <li class="navigation-item">
+          <a class="links" href="index.html#Home">Home</a>
+        </li>
+        <li class="navigation-item">
+          <a class="links" href="index.html#About">About The Game</a>
+        </li>
+        <li class="navigation-item">
+          <a class="links" href="index.html#Reviews">User Reviews</a>
+        </li>
+        <li class="navigation-item">
+          <a class="links" href="index.html#Characters">Duck Characters</a>
+        </li>
+        <li class="navigation-item">
+          <a class="links" href="index.html#Features">Features</a>
+        </li>
+        <li class="navigation-item">
+          <a class="links" href="index.html#Gallery">Gallery</a>
+        </li>
+      </ul>
+    </nav>
   </div>
 </header>
+<!-- Mobile menu -->
+<div id="modalWindow" class="modal">
+  <ul class="menu-list">
+    <li><a class="menu-list-item" href="index.html#Home">Home</a></li>
+    <li><a class="menu-list-item" href="index.html#About">About The Game</a></li>
+    <li>
+      <a class="menu-list-item" href="index.html#Reviews">User Reviews</a>
+    </li>
+    <li><a class="menu-list-item" href="index.html#Characters">Duck Characters</a></li>
+    <li><a class="menu-list-item" href="index.html#Features">Features</a></li>
+    <li><a class="menu-list-item" href="index.html#Gallery">Gallery</a></li>
+  </ul>
+</div>
 
 
     <main>
       <!-- Loads the specified .html file -->
       <!-- Hero -->
-<article class="hero-section">
+<article class="hero-section" id="Home">
     <div class="container">
         <h1 class="visually-hidden">Ducky Clicker Idle Game – Build Your Duck Empire</h1>
         <a class="hero-link" href="#Features">
@@ -42,7 +83,7 @@
     </div>
 </article>
 <!-- About the Game -->
-<section class="about-section">
+<section class="about-section" id="About">
     <div class="container about-container">
         <h2 class="about-title">About the Game</h2>
         <picture>
@@ -56,7 +97,7 @@
     </div>
 </section>
 <!-- User Reviews -->
-<section class="reviews-section">
+<section class="reviews-section" id="Reviews">
     <div class="container">
         <h2 class="reviews-title">User Reviews</h2>
         <div class="swiper reviews-swiper">
@@ -110,7 +151,7 @@
     </div>
 </section>
 <!-- Duck Characters -->
-<section class="characters-section">
+<section class="characters-section" id="Characters">
     <div class="container">
         <h2 class="characters-title">Duck Characters</h2>
         <div class="swiper characters-swiper">
@@ -159,14 +200,73 @@
         </ul>
     </div>
 </section>
+<!-- Gallery -->
+<section class="gallery-section" id="Gallery">
+    <div class="container gallery-container">
+        <h2 class="gallery-title">Gallery</h2>
+        <div class="swiper gallery-swiper">
+            <div class="swiper-wrapper gallery-swiper-wrapper">
+                <div class="swiper-slide gallery-swiper-slide">
+                    <img class="gallery-img" src="/ducky-clicker/assets/one-BY_G86MV.png" alt="Duck" loading="lazy">
+                </div>
+                <div class="swiper-slide gallery-swiper-slide">
+                    <img class="gallery-img" src="/ducky-clicker/assets/two-c0j3-0NI.png" alt="Duck" loading="lazy">
+                </div>
+                <div class="swiper-slide gallery-swiper-slide">
+                    <img class="gallery-img" src="/ducky-clicker/assets/three-Dv0vcaMx.png" alt="Duck" loading="lazy">
+                </div>
+                <div class="swiper-slide gallery-swiper-slide">
+                    <img class="gallery-img" src="/ducky-clicker/assets/four-BI-mmVPA.png" alt="Duck" loading="lazy">
+                </div>
+                <div class="swiper-slide gallery-swiper-slide">
+                    <img class="gallery-img" src="/ducky-clicker/assets/five-DzqkdUbL.png" alt="Duck" loading="lazy">
+                </div>
+                <div class="swiper-slide gallery-swiper-slide">
+                    <img class="gallery-img" src="/ducky-clicker/assets/six-D5itXPtp.png" alt="Duck" loading="lazy">
+                </div>
+                <div class="swiper-slide gallery-swiper-slide">
+                    <img class="gallery-img" src="/ducky-clicker/assets/seven-BuQavcmd.png" alt="Duck" loading="lazy">
+                </div>
+            </div>
+        </div>
+        <div class="custom-navigation gallery-nav">
+            <button class="custom-arrow custom-prev" aria-label="Previous slide">
+               <img class="arrow" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAIdSURBVHgB7dxNLgRBGIfxt3AAK7FkK0IfQZzAEbiBG+Am4wgOgHGDCWKLnTiCxLR+IzKRzGd3VddbVc9vIZaT/yNtZvpDBAAAAAAAAAAAAJimqo42D6rjc0ncmiRIxx87d1+LHErikgswGd9VkoGkAuQ2vkomQI7jqyQC5Dq+Mh8g5/GV6QC5j6/MBihhfGUyQCnjK3MBShpfmQpQ2vjKTIASx1cmApQ6vooeoOTxVdQApY+vogVg/F9RAjD+RO8BGP8/Jz3yPX7z4t9qJ0OJxI3d8HF0ey0dbEhPQvzlN6ckd5ofpxJJra9ApFOAXg5BHHZmCx6A8ecLGoDxFwsWgPGXEyQA4y/PewDGX43XAIy/Om8BGL8dLwEYv73OARi/m84BvkROGL+9zgFeRsNBXculoBUv/wOeR3dXRGjH27sgIrTj9XMAEVbn/ZMwEVYT5LsgIiwv2LehRFhO0PMBRFgs+BkxIszXyzlhIszW23VBRJiut8tSlEbYr47FOU8h6nroZG0gkYzl+1066vXCrD9NhAsvEWoZPI3uziRhUa4N5XA0Ee3qaCL8inp/ABEM3CFTegQT94iVHMHMXZKlRjB1n3CJEczdKV9aBJPPiigpgtmnpZQSwfTzgkqIYP6JWblHSOKZcTlHSCKAyjVCMgFUjhGSCqByi7AuCfr8eH3Y2t7Vs0mbze83gjj2qiMuiwcAAAAAAAAAAOb9AFD0J4EdOFAqAAAAAElFTkSuQmCC" alt="Arrow left">
+            </button>
+            <button class="custom-arrow custom-next" aria-label="Next slide">
+                <img class="arrow" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAIdSURBVHgB7dxNLgRBGIfxt3AAK7FkK0IfQZzAEbiBG+Am4wgOgHGDCWKLnTiCxLR+IzKRzGd3VddbVc9vIZaT/yNtZvpDBAAAAAAAAAAAAJimqo42D6rjc0ncmiRIxx87d1+LHErikgswGd9VkoGkAuQ2vkomQI7jqyQC5Dq+Mh8g5/GV6QC5j6/MBihhfGUyQCnjK3MBShpfmQpQ2vjKTIASx1cmApQ6vooeoOTxVdQApY+vogVg/F9RAjD+RO8BGP8/Jz3yPX7z4t9qJ0OJxI3d8HF0ey0dbEhPQvzlN6ckd5ofpxJJra9ApFOAXg5BHHZmCx6A8ecLGoDxFwsWgPGXEyQA4y/PewDGX43XAIy/Om8BGL8dLwEYv73OARi/m84BvkROGL+9zgFeRsNBXculoBUv/wOeR3dXRGjH27sgIrTj9XMAEVbn/ZMwEVYT5LsgIiwv2LehRFhO0PMBRFgs+BkxIszXyzlhIszW23VBRJiut8tSlEbYr47FOU8h6nroZG0gkYzl+1066vXCrD9NhAsvEWoZPI3uziRhUa4N5XA0Ee3qaCL8inp/ABEM3CFTegQT94iVHMHMXZKlRjB1n3CJEczdKV9aBJPPiigpgtmnpZQSwfTzgkqIYP6JWblHSOKZcTlHSCKAyjVCMgFUjhGSCqByi7AuCfr8eH3Y2t7Vs0mbze83gjj2qiMuiwcAAAAAAAAAAOb9AFD0J4EdOFAqAAAAAElFTkSuQmCC" alt="Arrow right">
+            </button>
+        </div>
+    </div>
+</section>
     </main>
 
     <footer class="footer">
-  <div class="container">
-   
+  <div class="container footer-container">
+    <ul class="footer-navigation">
+      <li class="footer-link">
+        <a class="footer-underline" href="./privacy.html">Privacy policy</a>
+      </li>
+      <li class="footer-link">
+        <a class="footer-underline" href="./terms.html">Terms and Conditions</a>
+      </li>
+
+      <li class="footer-link">
+        <a class="footer-underline" href="./cookies.html">Cookies Policy</a>
+      </li>
+    </ul>
+    <p class="footer-text">© 2025 clickerva.space. All rights reserved</p>
   </div>
 </footer>
-
+    <div id="cookie-popup" class="cookie-popup">
+    <div class="popup-wrapper">
+        <p class="cookie-class">We use cookies to improve your experience on our website. By browsing this website, you agree to our use of cookies</p>
+        <div class="cookie-buttons">
+            <button id="accept-cookies" class="btn-accept">Accept Cookies</button>
+            <button id="decline-cookies" class="btn-decline">Decline Cookies</button>
+        </div>
+    </div>
+</div>
 
   </body>
 </html>
