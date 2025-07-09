@@ -74,19 +74,30 @@ function initSwipers() {
 
     // === GALLERY SWIPER ===
     else if (config.selector === '.gallery-swiper') {
-      const slidesPerView = screenWidth < 374 ? 1.1 : screenWidth < 1439 ? 1.7 : 6;
-      const swiper = new Swiper(container, {
-        modules: [Navigation],
-        slidesPerView,
-        spaceBetween: 20,
-        loop: true,
-        slideClass: config.slideClass,
-        wrapperClass: config.wrapperClass,
-        direction: 'horizontal',
-        navigation: config.navigation,
-      });
-      swiperInstances[id] = swiper;
-    }
+        const swiper = new Swiper(container, {
+            modules: [Navigation],
+            loop: true, 
+            slideClass: config.slideClass,
+            wrapperClass: config.wrapperClass,
+            direction: 'horizontal',
+            navigation: config.navigation,
+            observer: true,
+            observeParents: true,
+        
+            breakpoints: {
+             374: {
+                slidesPerView: 1.1,
+                spaceBetween: 20,
+              },
+              1440: {
+                slidesPerView: 4,
+                spaceBetween: 20,
+              },
+            },
+          });
+        
+          swiperInstances[id] = swiper;
+        }
   });
 }
 
